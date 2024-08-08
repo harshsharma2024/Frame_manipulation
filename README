@@ -1,0 +1,30 @@
+Directory Structure:
+
+PanduAI_task/
+├── Assets/
+│   ├── green_image.mp4
+│   ├── image.png
+│   ├── image1.png
+│   ├── video.mp4
+│   └── white-background.jpg
+├── background_remover/
+│   ├── background_remover.py
+└── image_video_mover/
+    ├── left_to_write_movement.py
+    └── zig-zag-movement.py
+
+
+// Initialize the .mp4 and .png files in the Assets folder(in the same name format) before running the code 
+
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+// For left to right movement
+python3 image_video_mover/left_to_write_movement.py
+
+// For zig-zag movement
+python3 image_video_mover/zig-zag-movement.py
+
+// For background remover
+python3 background_remover/background_remover.py
